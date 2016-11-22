@@ -1,0 +1,145 @@
+title = "book"
+url = "/book/:bookSlug"
+layout = "baselayout"
+is_hidden = 0
+==
+<?php
+function onStart()
+{
+    $book = \Acme\BookShop\Models\Book::where('slug', $this->param('bookSlug') )->first();
+    
+    $rel_books = \Acme\BookShop\Models\Book::where('series_id' , '=', $book->series_id )->get(); 
+   
+    if($book)
+    {
+      $this['book'] = $book;
+      $this->page->title = $book->title;
+      if($rel_books)
+      {
+         $this['rel_books']= $rel_books;
+           
+      }else
+      {
+         return \Redirect::to('/404');
+      }
+    }else{
+      return \Redirect::to('/404');
+    }
+}
+?>
+==
+<!-- catg header banner section -->
+<!-- <section id="aa-catg-head-banner">
+ <img src="{{'assets/img/fashion/fashion-header-bg-8.jpg'|theme}}" alt=" img"> 
+   <div class="container">
+    <div class="aa-catg-head-banner-content">
+      <h2>Book details | {{book.title}}</h2>
+      <ol class="breadcrumb">
+        <li><a href="{{ url('/') }}">Home</a></li>                   
+        <li class="active">Book Details | {{book.title}}</li>
+      </ol>
+    </div>
+   </div>
+ </div>
+</section> -->
+  <!-- / catg header banner section -->
+
+ <!-- product category -->
+  <section id="aa-product-details">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-product-details-area">
+            <div class="aa-product-details-content">
+              <div class="row">
+                <!-- Modal view slider -->
+                <div class="col-md-5 col-sm-5 col-xs-12">                              
+                  <div class="aa-product-view-slider">                                
+                    
+                        <div class="aa-big-image-container">
+                        <a data-lens-image="{{'assets/img/view-slider/large/polo-shirt-1.png'|theme}}" class="simpleLens-lens-image">
+                        {% if book.image.getPath %}
+                        <img src="{{ book.image.getPath }}" alt="img {{book.image.title}}">
+                        {% else %}
+                        <img src="{{ 'assets/img/electronics/electronic-1.png'|theme }}" alt="img {{ book.image.title }}">
+                        {% endif %}
+                        </a>
+                        </div>
+                      </div>
+                   
+                </div>
+                <!-- Modal view content -->
+                <div class="col-md-7 col-sm-7 col-xs-12">
+                  <div class="aa-product-view-content">
+                    <h3>{{ book.title }}</h3>
+                   
+                    <p>{{ book.shortDescription }}!</p>
+                    <!-- <h4><strong>Author : </strong>{{ book.author.name }}</h4> -->
+                    <!-- <h4><strong>publisher : </strong>{{ book.publisher.name }}</h4> -->
+                    <h4><strong>Category : </strong>{{ book.category.name }}</h4>
+                    <h4><strong>Level : </strong>{{ book.level.name }}</h4>
+                    <h4><strong>ISBN : </strong>{{book.ISBN}}</h4>
+                    <!-- <h4><strong>publish Date : </strong>{{ book.publishDate|date("d/m/Y") }}</h4> -->
+                    
+            
+                    <!-- <div class="aa-prod-view-bottom">
+                      <a class="aa-add-to-cart-btn" href="#">Add To Cart</a>
+                      <a class="aa-add-to-cart-btn" href="#">Wishlist</a>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="aa-product-details-bottom">
+              <ul class="nav nav-tabs" id="myTab2">
+                <li><a href="#description" data-toggle="tab">Description</a></li>
+                <!-- <li><a href="#review" data-toggle="tab">Reviews</a></li>                 -->
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div class="tab-pane fade in active" id="description">
+                  <p>{{ book.description |raw }}</p>
+                </div>
+              </div>
+              
+              
+            <!-- Related product -->
+            <div class="aa-product-related-item">
+              <h3>Related Books</h3>
+              
+              
+              <ul class="aa-product-catg aa-related-item-slider">
+                <!-- start single product item -->
+             
+                 
+              {% for item in rel_books %}
+                <!--start single product item -->
+                <li>
+                    <figure>
+                      <a class="aa-product-img" href="{{ url('/book') ~ '/' ~ item.slug }}">
+                         {% if item.image.getPath %}
+                        <img src="{{ item.image.getPath }}" alt="img {{item.image.title}}">
+                        {% else %}
+                        <img src="{{ 'assets/img/electronics/electronic-1.png'|theme }}" >
+                        {% endif %}
+                   
+                      </a>
+                      
+                            <h4 class="aa-product-title">
+                                  <a href="{{ url('/book') ~ '/' ~ item.slug }}">{{item.title}}</a>
+                            </h4>
+                          </figcaption>
+                    </figure>
+                </li>
+              {% endfor %}
+                                    
+              </ul>
+
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / product category -->

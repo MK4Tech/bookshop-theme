@@ -1,0 +1,39 @@
+title = "home"
+url = "/"
+layout = "baselayout"
+meta_title = "description"
+meta_description = "alexpublishing or alex publishing"
+is_hidden = 0
+
+[booksBLock]
+max = 5
+orderBy = "created_at"
+orderDirection = "desc"
+
+[seriesBLock]
+max = 4
+orderBy = "created_at"
+orderDirection = "asc"
+
+[newsList]
+max = 3
+
+[form]
+
+[slideShow]
+slider = 1
+==
+<div class="container">
+
+{% component 'slideShow'%}
+
+<!-- {% component 'booksBLock' %} -->
+
+{% partial "banner1" %}
+<hr>
+{% partial "home-news" %}
+{% partial "banner2" %}
+
+{% partial "subscribe" %}
+
+</div>
