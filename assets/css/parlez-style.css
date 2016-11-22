@@ -1,0 +1,74 @@
+
+body{
+	font-family: "Helvetica Neue",Helvetica,'Cairo', sans-serif;
+	
+}
+a{
+	text-decoration: none;
+	display: inline-block;
+
+}
+
+.header{
+
+	margin-top: 160px;
+}
+.cd-section{
+	margin-top: 20px;
+	background-color: #FFF;
+	height:100%;
+}
+
+.cd-section .cd-section-content .item{
+	
+	height: 350px;
+	/*display: inline-block;*/
+	background-color:#e0e2e2;
+	border-radius: 5px;
+	width: 100%;
+	margin-bottom: 25px;
+}
+.cd-section .cd-section-content .item span{
+
+	font-size:16px; 
+}
+.cd-section .cd-section-content .second-container{
+	width:90%;
+	height:100%; 
+	margin: 0 auto; 
+}
+.cd-section .cd-section-content .item h2{
+	color:#333;
+	padding-top: 15px;
+	padding-bottom:15px;
+	border-bottom:1px solid #b7b9b9;  
+}
+.cd-section .cd-section-content .left_content{
+	width:50%;
+	float:left;
+}
+.cd-section .cd-section-content .left_content img{ 
+  /*border:2px solid #FFF;*/
+  height:258px; 
+}
+.cd-section .cd-section-content .right_content{
+	width:50%;
+	float:right;
+}
+.cd-section .cd-section-content .right_content .cd 
+{
+     padding-top:10px;
+}
+.cd-section .cd-section-content .right_content .cd img{
+    height: 130px;
+}
+.cd-section .cd-section-content .right_content .down_btn{
+	padding-top: 20px;
+}
+.cd-section .cd-section-content .right_content .down_btn img{
+    height: 60px;
+}
+
+
+
+

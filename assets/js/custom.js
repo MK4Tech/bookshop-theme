@@ -62,7 +62,7 @@ jQuery(function($){
   /*  4. POPULAR PRODUCT SLIDER (SLICK SLIDER)
   /* ----------------------------------------------------------- */      
 
-    jQuery('.aa-series-slider').slick({
+    jQuery('.aa-popular-slider').slick({
       dots: false,
       infinite: false,
       speed: 300,

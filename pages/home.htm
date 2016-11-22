@@ -23,14 +23,17 @@ max = 3
 [slideShow]
 slider = 1
 ==
-<div class="container">
+
 
 {% component 'slideShow'%}
 
-<!-- {% component 'booksBLock' %} -->
+<div class="container">
 
+{% partial 'seriesBLock' %}
 {% partial "banner1" %}
 <hr>
+{% component 'booksBLock' %}
+
 {% partial "home-news" %}
 {% partial "banner2" %}
 

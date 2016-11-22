@@ -18,15 +18,17 @@
             <!-- Left nav -->
             <ul class="nav navbar-nav">
               <li><a href="{{ url('/') }}"><i class="fa fa-home fa-lg"></i></a></li>
-              <li><a href="{{ url('/products') }}">{{ 'Main-Nav.Book-Series'|_ }}</a> 
+             
+
+              <li class="dropdown">
+                 <a class="dropdown-toggle" data-toggle="dropdown" href="{{ url('/products') }}">
+                 {{'Main-Nav.Book-Series'|_ }} &nbsp; <span class="caret"></span></a>
+                 
+                     
                 <ul class="dropdown-menu">
-                    <h5>
-                      Shop By Level
-                    </h5>
+                   
                    <li><a href="{{ url('allseries') }}">{{ 'Main-Nav.All-Series'|_ }} </a></li>
-                   <h5>
-                      Shop By Subject
-                    </h5>
+                   
                    <li><a href="{{ url('products') }}"> {{ 'Main-Nav.All-Books'|_ }}  </a></li>                                            
                 </ul>
 

@@ -1,9 +1,8 @@
 /*
-  Template Name: Daily Shop 
+  Template Name: Daily Shop
   Author : MarkUps
   Author URI: http://wwwPmarkups.io/
-  Version: 1.1
-  Modified By:Mohamed Khalil
+  Version: 1.0
   Tags: light, white, ecommerce, online store, multi page, custom-colors, Bootstrap,responsive, html5, css3, Sass, template, web template
 
 */
@@ -39,11 +38,12 @@
 /* BASE - Base tyles, Variables, Mixins, etc. */
 html{
   margin: 0px;
-   padding:0px; }
+   padding:0px;
+  }
 
 body {
   background-color:#ffffff;
-  font-family: "Helvetica Neue", Helvetica,sans-serif, cursive;
+  font-family:  'Cairo','Helvetica Neue', Helvetica,sans-serif, cursive;
   color: #333333;
   font-size: 16px;
   overflow-x: hidden;
@@ -274,12 +274,12 @@ div{border:0px; }
 #aa-header .aa-header-top {
   border-bottom: 1px solid #E8E8E8;
   display: inline;
-  float: right;
+  float: left;
   width: 100%;
 }
 #aa-header .aa-header-top .aa-header-top-area {
   display: inline;
-  float: right;
+  float: left;
   width: 100%;
 }
 #aa-header .aa-header-top .aa-header-top-left {
@@ -288,7 +288,12 @@ div{border:0px; }
 #aa-header .aa-header-top .aa-header-top-left .aa-language {
   border-right: 1px solid #ccc;
   float: left;
+
 }
+#aa-header .aa-header-top .aa-header-top-left .aa-language select{
+  height:40px;
+}
+
 #aa-header .aa-header-top .aa-header-top-left .aa-language .btn {
   font-size: 12px;
 }
@@ -423,14 +428,15 @@ div{border:0px; }
   display: inline;
   width: 100%;
 }
-
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-logo {
+  
   float: left;
   margin-top: 4px;
-  padding: 0 5px 0 15px;
-  border-right: none;
+  padding: 0 5px 0px 15px;  
   border-left: 1px solid #ED1B35;
+  border-right: 0px;
 }
+
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-logo a {
   font-family: "Raleway", sans-serif;
   font-size: 28px;
@@ -460,8 +466,8 @@ div{border:0px; }
 }
 
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-search-box {
-  float: right;
-  margin:13px 0 0 0;  
+  float: left;
+  margin:13px 0px 0px 15%;  
   position: relative;
   width: 500px;
 }
@@ -471,17 +477,16 @@ div{border:0px; }
   font-size: 14px;
   font-family: "Raleway", sans-serif;
   height: 40px;
-  padding: 10px 5px 10px 10px;
+  padding: 10px 55px 10px 10px;
   width: 100%;
 }
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-search-box button {
-  float:left !important;
   border: medium none;
   background-color: #cccccc;
   color: #fff;
   height: 100%;
   position: absolute;
-  left:0;  
+  right: 0;
   top: 0;
   width: 50px;
   -webkit-transition: all 0.5s;
@@ -495,7 +500,7 @@ div{border:0px; }
 }
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-language{
   width: 100px;
-  float: left;
+  float: right;
   margin-top: 17px;
   
 
@@ -653,7 +658,8 @@ div{border:0px; }
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-#aa-header .aa-header-bottom .aa-cartbox .aa-cartbox-summary ul li .aa-remove-product:hover, #aa-header .aa-header-bottom .aa-cartbox .aa-cartbox-summary ul li .aa-remove-product:focus {
+#aa-header .aa-header-bottom .aa-cartbox .aa-cartbox-summary ul li .aa-remove-product:hover,
+#aa-header .aa-header-bottom .aa-cartbox .aa-cartbox-summary ul li .aa-remove-product:focus {
   color: #333;
 }
 #aa-header .aa-header-bottom .aa-cartbox .aa-cartbox-summary ul li .aa-cartbox-total-title {
@@ -723,31 +729,27 @@ div{border:0px; }
 #menu .menu-area .navbar-default .navbar-nav li:first-child {
   background-color: #ed1b36;   
 }
-
-
 #menu .menu-area .navbar-default .navbar-nav .open a {
   background-color: #fff;
 }
 
 /* Nav-bar Dropdown */
-
-#menu .menu-area .navbar-default .navbar-nav .dropdown-menu{
+/*#menu .menu-area .navbar-default .navbar-nav .dropdown-menu{
   background-color:#fff;
   color: #333; 
-}
+}*/
 #menu .menu-area .navbar-default .navbar-nav .dropdown-menu li{
-  padding: 8px 15px;
+ 
   color: #fff; 
   width:100%;
 }
 #menu .menu-area .navbar-default .navbar-nav .dropdown-menu li a {
   padding: 8px 15px;
 }
-
 #menu .menu-area .navbar-default .navbar-nav .dropdown-menu li a:hover,
 #menu .menu-area .navbar-default .navbar-nav .dropdown-menu li a:focus {
   color: #fff; 
-  background-color: #ed1b36;
+  /*background-color: #ed1b36;*/
 }
 
 /*#menu .menu-area .navbar-default .navbar-nav .dropdown-menu .dropdown-header {
@@ -830,6 +832,7 @@ div{border:0px; }
 }
 
 #wpf-loader-two {
+  background-color: #FF6666;
   height: 100%;
   bottom: 0;
   left: 0;
@@ -841,7 +844,7 @@ div{border:0px; }
 }
 
 #wpf-loader-two .wpf-loader-two-inner {
-  border: 2px solid #fff;
+ /* border: 2px solid #fff;*/
   border-radius: 50%;
   height: 100px;
   left: 46%;
@@ -850,8 +853,14 @@ div{border:0px; }
   width: 100px;
   text-align: center;
 }
+#wpf-loader-two .wpf-loader-two-inner i{
+  color: #FFF;
+}
+#wpf-loader-two .wpf-loader-two-inner span{
+  color: #FFF;
+}
 
-#wpf-loader-two .wpf-loader-two-inner:before {
+/*#wpf-loader-two .wpf-loader-two-inner:before {
   content: "";
   height: 57%;
   left: -204px;
@@ -885,7 +894,7 @@ div{border:0px; }
   animation-duration: 1.5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-}
+}*/
 
 #wpf-loader-two .wpf-loader-two-inner span {
   color: #fff;
@@ -986,7 +995,7 @@ div{border:0px; }
     #aa-series-blog .aa-series-blog-area {
         display: inline;
         float: left;
-        margin: 0px auto 20px auto;
+        margin: 25px auto 20px auto;
         width: 100%;
     }
 
@@ -1741,6 +1750,31 @@ div{border:0px; }
   font-size: 15px;
   margin-bottom: 0;
 }
+
+/*==================
+LATEST NEWS SECTION
+====================*/
+
+#aa-latest-news{
+  width:100%;
+  display: inline-block;
+  margin: 0 0 35px 0;
+  height: 100%;
+
+}
+#aa-latest-news .aa-latest-news-area > h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+#aa-latest-news .aa-latest-news-area .aa-latest-news-body .img-section{
+  display: inline;
+  float: right;
+  width:50%;  
+}
+#aa-latest-news .aa-latest-news-area .aa-latest-news-body .desc-section{
+  width:50%; 
+}
+
 
 /*==================
  TESTIMONIAL SECTION
