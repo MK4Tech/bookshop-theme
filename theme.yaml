@@ -21,6 +21,7 @@ translate:
         Main-Nav.Contact-us: 'Contact Us'
         # Home Blocks Headings
         Home.seriesBolock.heading: 'Book Series'
+        Home.LatestBooks.heading: 'Latest Books'
         Home.news.Heading: 'Our News'
         Home.subscribe-Form: 'Subscribe' 
         # Contact Us Page
@@ -56,8 +57,9 @@ translate:
         Main-Nav.Contact-us: 'اتصل بنا'
         # Home Blocks Headings
         Home.seriesBolock.heading: 'سلاسل الكتب'
+        Home.LatestBooks.heading: 'أخر أصدارتنا'
         Home.news.Heading: 'أخبارنا'
-        Home.subscribe-Form: 'أشترك'
+        Home.subscribe-Form: 'أشترك ليصلك أصداراتنا'
         # Contact Us Page
         ContactUs.Heading: 'أتصل بنا'
         ContactUs.NameLable: 'الأسم'

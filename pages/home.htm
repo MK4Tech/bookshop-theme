@@ -5,16 +5,6 @@ meta_title = "description"
 meta_description = "alexpublishing or alex publishing"
 is_hidden = 0
 
-[booksBLock]
-max = 5
-orderBy = "created_at"
-orderDirection = "desc"
-
-[seriesBLock]
-max = 4
-orderBy = "created_at"
-orderDirection = "asc"
-
 [newsList]
 max = 3
 
@@ -23,8 +13,6 @@ max = 3
 [slideShow]
 slider = 1
 ==
-
-
 {% component 'slideShow'%}
 
 <div class="container">
@@ -32,7 +20,7 @@ slider = 1
 {% partial 'seriesBLock' %}
 {% partial "banner1" %}
 <hr>
-{% component 'booksBLock' %}
+{% partial "latest-books" %}
 
 {% partial "home-news" %}
 {% partial "banner2" %}
