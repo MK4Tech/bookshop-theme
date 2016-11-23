@@ -13,7 +13,9 @@ translate:
         Locale.Selection: 'select language'
         # Main Nav 
         Main-Nav.Home: 'Home'
-        
+        Main-Nav.Book-Series: 'Book Series'
+        Main-Nav.All-Series: 'Book Series'
+        Main-Nav.All-Books: 'All Books'
         Main-Nav.News: 'News'
         Main-Nav.About-us: 'About Us'
         Main-Nav.Contact-us: 'Contact Us'
@@ -46,7 +48,9 @@ translate:
         Locale.Selection: 'select language'
         # Main Nav 
         Main-Nav.Home: 'الرئيسية'                
-        
+        Main-Nav.Book-Series: 'السلاسل'
+        Main-Nav.All-Series: 'سلاسل الكتب'
+        Main-Nav.All-Books: 'الكتب'
         Main-Nav.News: 'أخبارنا'
         Main-Nav.About-us: 'عن المكتبة'
         Main-Nav.Contact-us: 'اتصل بنا'
