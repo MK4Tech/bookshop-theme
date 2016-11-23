@@ -499,11 +499,9 @@ div{border:0px; }
   opacity: 0.8;
 }
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-language{
-  width: 100px;
-  float: right;
-  margin-top: 17px;
-  
-
+    width: 100px;
+    float: left !important;
+    margin-top: 14px;
 }
 #aa-header .aa-header-bottom .aa-cartbox {
   float: right;

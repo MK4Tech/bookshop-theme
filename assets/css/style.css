@@ -220,14 +220,13 @@ div{border:0px; }
     background-color: #008000;
 }
 
-.aa-product-img
+/*.aa-product-img
 {
-   border-radius:50px: 
-    display:block;
+    display:block;     
     height:300px;
     width:100% 
 
-}
+}*/
 
 
 /* LAYOUTS - Page layout styles */
@@ -497,9 +496,13 @@ background-image: url("../img/logo/alex_logo.png");
   opacity: 0.8;
 }
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-language{
-  width: 100px;
-  float: right;
-  margin-top: 17px;
+  width: 100px; 
+  margin-top: 14px; 
+  float: right; 
+
+}
+#aa-header .aa-header-bottom .aa-header-bottom-area .aa-language .form-control{ 
+  height:40px;
   
 
 }
@@ -1390,7 +1393,7 @@ background-image: url("../img/logo/alex_logo.png");
 .aa-product-catg li {
 
   height: 380px;    
-  padding:20px 20px;
+  padding:20px 15px;
   background-color:#f3f3f3;
   display: block;
   float: left;
@@ -1431,8 +1434,14 @@ background-image: url("../img/logo/alex_logo.png");
 .aa-product-catg li figure {
   position: relative;
   height: 300px;
+
+}
+.aa-product-catg li figure a{
+  overflow: hidden;
 }
 .aa-product-catg li figure .aa-product-img {
+   width: 100%;
+   height: 100%;
   background-color: inherit;
   display: block;  
   -webkit-transition: all 0.5s;
