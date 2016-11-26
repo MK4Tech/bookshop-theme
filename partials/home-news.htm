@@ -28,24 +28,26 @@ function onStart()
             <h2>{{ 'Home.news.Heading' |_}}</h2>
                   
                       <div class="row">
-                          <div class="col-md-4"> 
+                          
+                      <div class="aa-latest-news-body" >
 
-                                  
-                                      <div class="img-section">
-                                      <a href="#">
-                                          {% if news.image.getPath %}
-                                                <img src="{{news.image.getpath}}">
-                                            {% else %}
-                                                <!-- <img src="{{'assets/img/promo-banner-1.jpg'|theme}}"> -->
-                                                <img src="http://placehold.it/350x300">
-                                          {% endif %}
-                                         </a> 
-                                       </div>
-                                     
+                            <div class="col-md-4"> 
+                            <div class="img-section">
+                                        <a href="#">
+                                            {% if news.image.getPath %}
+                                                  <img src="{{news.image.getpath}}">
+                                              {% else %}
+                                                  <!-- <img src="{{'assets/img/promo-banner-1.jpg'|theme}}"> -->
+                                                  <img src="http://placehold.it/350x300">
+                                            {% endif %}
+                                           </a> 
+                            </div>
+                            </div>             
+                                       
                                
-                         </div>
-                          <div class="col-md-8">
-                                <div class="desc-section">
+                         
+                            <div class="col-md-8">
+                            <div class="desc-section">
                                    
                                      {% if news.title %}
                                       <h3>{{ news.title }}</h3>
@@ -64,12 +66,15 @@ function onStart()
                                      </p>
                                      {% endif %}    
                                   </P>
-                                </div>
-                          </div>
-                       </div>
-                    </div>
+                            </div>
+                            </div>
+
+                      </div> 
+                     </div>
+
+              </div>
           </div>  
         </div>
       </div>
-    </div>
+    
   </section>        
