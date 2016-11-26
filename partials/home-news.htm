@@ -1,3 +1,23 @@
+
+
+==
+<?php
+
+function onStart()
+{
+    
+    $news = Acme\BookShop\Models\News::orderBy('id', 'DESC')->first();
+   
+
+     if($news)
+     {
+        $this['news'] = $news;
+     } 
+
+}?>
+
+== 
+
 <!-- Latest News  -->
   <section id="aa-latest-news">
     <div class="container">
@@ -6,28 +26,43 @@
           <div class="aa-latest-news-area">
 
             <h2>{{ 'Home.news.Heading' |_}}</h2>
-
-
-                      <!-- <div class="row"> 	 
-
-
-                               {% component 'news' %}
-
-                      </div> -->
-                     <div class="aa-latest-news-body">
+                  
                       <div class="row">
-                          <div class="col-md-4">                               
+                          <div class="col-md-4"> 
 
-                                <div class="img-section">
-                                 <img src="http://placehold.it/350x300"/>
-                                </div>
-                          </div>
+                                  
+                                      <div class="img-section">
+                                      <a href="#">
+                                          {% if news.image.getPath %}
+                                                <img src="{{news.image.getpath}}">
+                                            {% else %}
+                                                <!-- <img src="{{'assets/img/promo-banner-1.jpg'|theme}}"> -->
+                                                <img src="http://placehold.it/350x300">
+                                          {% endif %}
+                                         </a> 
+                                       </div>
+                                     
+                               
+                         </div>
                           <div class="col-md-8">
                                 <div class="desc-section">
-                                   <h3>Frankfourt Book Fair  </h3>
-                                    
-                                   <P>
-                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially 
+                                   
+                                     {% if news.title %}
+                                      <h3>{{ news.title }}</h3>
+                                     {% else %}
+                                        <h3>No heading</h3>
+                                     {% endif %}
+
+                                   
+                                     {% if news.description %}
+
+                                     <p> {{news.description}} </p>
+                                      
+                                     {% else %}
+                                     <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                                     </p>
+                                     {% endif %}    
                                   </P>
                                 </div>
                           </div>

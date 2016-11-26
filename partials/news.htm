@@ -8,7 +8,7 @@
             <h2>LATEST NEWS</h2>
             <div class="row">
               <!-- single latest blog -->
-              {% for news in newsList.recentNews %}
+              {% for news in newsList.allNews %}
               <div class="col-md-4 col-sm-4">
                 <div class="aa-latest-blog-single">
                   <figure class="aa-blog-img">                    
@@ -16,7 +16,7 @@
                     {% if news.image.getPath %}
                         <img src="{{news.image.getpath}}">
                     {% else %}
-                        <img src="{{"assets/img/promo-banner-1.jpg"|theme}}">
+                        <img src="{{'assets/img/promo-banner-1.jpg'|theme}}">
                     {% endif %}
                     </a>
                     <figcaption class="aa-blog-img-caption">
