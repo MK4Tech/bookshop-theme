@@ -43,7 +43,7 @@ html{
 
 body {
   background-color:#ffffff;
-  font-family:  'Cairo','Helvetica Neue', Helvetica,sans-serif, cursive !important;
+  font-family:  'Cairo','Lato', Helvetica,sans-serif, cursive !important;
   color: #333333;
   font-size: 16px;
   overflow-x: hidden;
@@ -79,7 +79,7 @@ a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cairo','Helvetica Neue';
+  font-family: 'Cairo','Lato';
   color:#ed1b36;
 }
 
