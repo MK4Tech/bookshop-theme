@@ -23,7 +23,7 @@ translate:
         Home.seriesBolock.heading: 'Book Series'
         Home.LatestBooks.heading: 'Latest Books'
         Home.news.Heading: 'Our News'
-        Home.subscribe-Form: 'Subscribe' 
+        Home.subscribe-Form: 'Subscribe'  
         # Contact Us Page
         ContactUs.Heading: 'Conatct Us'
         ContactUs.NameLable: 'Name'
@@ -32,6 +32,7 @@ translate:
         ContactUs.SubjectLable: 'Subject'
         ContactUs.MessageLable: 'Message'
         ContactUs.ButtonLable: 'Send'
+        ContactUs.Word: 'Give us a call, send us an email or a letter.'
         # Footer
         Footer.Main Menu : 'Main Menu'
         Footer.Home : 'Home'
@@ -40,7 +41,15 @@ translate:
         Footer.About-Us: 'About us'
         Footer.Contact-Us: 'Contact US'
         Footer.Contact-Us.Heading: 'Conatct Us'
-        Footer.Address: 'Address'
+        Footer.Address: 'Address: '
+        Footer.Addres.text: ''
+        Footer.Useful Link: 'Useful Links'
+        #General
+        Description: ''
+        Level: ''
+        Subject: ''
+        Related_Book: ''
+        Related_Series: ''
 
 
         
@@ -68,6 +77,7 @@ translate:
         ContactUs.SubjectLable: 'الموضوع'
         ContactUs.MessageLable: 'الرسالة'
         ContactUs.ButtonLable: 'أرسل'
+        ContactUs.Word: 'sdas'
          # Footer
         Footer.Main Menu : 'القائمة الرئيسية'
         Footer.Home : 'الرئيسية'
@@ -77,4 +87,13 @@ translate:
         Footer.Contact-Us: 'أتصل بنا'
         Footer.Contact-Us.Heading: 'أتصل بنا'
         Footer.Address: 'العنوان'
+        Footer.Addres.text: ''
+        Footer.Useful Link: 'Useful Links'
+        #General
+        Description: 'Description'
+        Level: 'Level'
+        Subject: 'Subjects'
+        Related_Book: ''
+        Related_Series: ''
+
         
