@@ -3,9 +3,20 @@ url = "/contact"
 layout = "baselayout"
 is_hidden = 0
 
-
+[simpleContact]
 ==
-
+<?php
+function onStart()
+{
+  $this['name_lable'] = Lang::get('zainab.simplecontact::lang.simplecontact.name');
+   $this['email_lable'] = Lang::get('zainab.simplecontact::lang.simplecontact.email');
+    $this['phone_lable'] = Lang::get('zainab.simplecontact::lang.simplecontact.phone');
+     $this['subject_lable'] = Lang::get('zainab.simplecontact::lang.simplecontact.subject');
+     $this['message_lable'] = Lang::get('zainab.simplecontact::lang.simplecontact.message');
+      $this['button_lable'] = Lang::get('zainab.simplecontact::lang.simplecontact.button_text');
+}
+?>
+==
 <!-- start contact section -->
  <section id="aa-contact">
    <div class="container">
@@ -28,9 +39,9 @@ is_hidden = 0
                  <div class="aa-contact-address-left">
 
                                               
-                          <!-- start form -->
-                          {% partial "contact-form.htm"  %}
-                          <!-- end form -->                        
+                         <!-- start form -->
+                         {% component 'simpleContact' %}
+                         <!-- end form -->                        
 
                  </div>
                </div>
@@ -38,7 +49,7 @@ is_hidden = 0
                  <div class="aa-contact-address-right">
                    <address>
                      <h3>Alexandria Publishings</h3>
-                     <p>Give us a call, send us an email or a letter. We are always here to help out in whatever way we can.</p>
+                     <p> {{'ContactUs.Word'|_}} </p>
                      <p><span class="fa fa-home"></span>27 B El-Geish Road
                         El-Shatby
                         Alexandria, Egypt
