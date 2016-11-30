@@ -48,8 +48,8 @@ translate:
         Description: ''
         Level: ''
         Subject: ''
-        Related_Book: ''
-        Related_Series: ''
+        Related_Book.Heading: ''
+        Related_Series.Heading: ''
 
 
         
@@ -93,7 +93,7 @@ translate:
         Description: 'Description'
         Level: 'Level'
         Subject: 'Subjects'
-        Related_Book: ''
-        Related_Series: ''
+        Related_Book.Heading: ''
+        Related_Series.Heading: ''
 
         
