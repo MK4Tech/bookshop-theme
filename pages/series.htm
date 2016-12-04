@@ -83,7 +83,7 @@ function onStart()
                   <div class="aa-product-view-content">
                     <h3>{{ series.title }}</h3>
                    
-                    <p>{{ series.shortDescription }}!</p>
+                    <p>{{ series.shortDescription }}</p>
 
                   <!--   <h4><strong>Author : </strong>
                     {% for author in series.authors %}
@@ -95,16 +95,25 @@ function onStart()
                     {{ publisher.name }}
                     {% endfor %}
                     </h4> -->
-                    <h4><strong>Category : </strong>
-                    {% for category in series.categories %}
-                    {{ category.name }}
-                    {% endfor %}
-                    </h4> 
-                    <h4><strong>Level : </strong>
-                    {% for level in series.levels %}
-                    {{ level.name }}
-                    {% endfor %}
-                    </h4>              
+                     
+                    <table>
+                    <tbody>
+                    <tr>
+                        <td><h4><strong>{{'Product.Category'|_}} </strong></h4></td>                        
+                        <td><h4>{% for category in series.categories %}
+                          {{ category.name }}
+                          {% endfor %}
+                         </h4></td>
+                    </tr> 
+                    <tr>
+                        <td>   
+                        <h4><strong>{{'Product.Level'|_}} </strong></h4></td>      
+                        <td><h4>{% for level in series.levels %}
+                        {{ level.name }}
+                        {% endfor %}</h4></td>
+                    </tr>
+                    </tbody>
+                    </table>              
             
                     <!-- <div class="aa-prod-view-bottom">
                       <a class="aa-add-to-cart-btn" href="#">Add To Cart</a>
@@ -117,7 +126,7 @@ function onStart()
             <div class="aa-product-details-bottom">
               <ul class="nav nav-tabs" id="myTab2">
                 <li><a href="#description" data-toggle="tab">Description</a></li>
-                <!-- <li><a href="#review" data-toggle="tab">Reviews</a></li>                 -->
+                <!-- <li><a href="#review" data-toggle="tab">Reviews</a></li> -->
               </ul>
 
               <!-- Tab panes -->
