@@ -423,7 +423,11 @@ div{border:0px; }
 
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-logo {
  
-  float: left;
+  float: left; 
+  width: 175px;
+  height: 52px;
+  background-repeat: no-repeat;
+  background-image: url('../img/logo/alex_logo.png') ;
   margin-top: 4px;
   padding: 0 15px 0 5px;  
   border-right: 1px solid #ED1B35;
@@ -1293,7 +1297,8 @@ background-image: url("../img/logo/alex_logo.png");
   width: 100%;
 }
 #aa-product .aa-product-area .aa-product-inner .aa-product-catg {
-  float: left;  
+  float: left;
+  width:100%;  
 }
 #aa-product .aa-product-area .aa-product-inner #men {
   text-align: center;
@@ -1775,10 +1780,13 @@ LATEST NEWS SECTION
 #aa-latest-news .aa-latest-news-area .aa-latest-news-body .img-section{
   display: inline;
   float: left;
-  width:50%;  
+  width:350px;  
+  height: 300px;
+  background-color: #FFF;  
 }
 #aa-latest-news .aa-latest-news-area .desc-section{
-  width:50%; 
+  width:50%;
+  height: 300px; 
 }
 
 

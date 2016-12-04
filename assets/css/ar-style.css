@@ -432,6 +432,10 @@ div{border:0px; }
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-logo {
   
   float: left;
+  width: 175px;
+  height: 52px;
+  background-repeat: no-repeat;
+  background-image: url('../img/logo/logo-ar.png') !important;
   margin-top: 4px;
   padding: 0 5px 0px 15px;  
   border-left: 1px solid #ED1B35;
@@ -1293,6 +1297,7 @@ div{border:0px; }
 }
 #aa-product .aa-product-area .aa-product-inner .aa-product-catg {
   float: left;  
+  width:100%;
 }
 #aa-product .aa-product-area .aa-product-inner #men {
   text-align: center;
@@ -1768,10 +1773,13 @@ LATEST NEWS SECTION
 #aa-latest-news .aa-latest-news-area .aa-latest-news-body .img-section{
   display: inline;
   float: right;
-  width:50%;  
+  width:350px;  
+  height: 300px;
+  background-color: #FFF;  
 }
-#aa-latest-news .aa-latest-news-area .aa-latest-news-body .desc-section{
-  width:50%; 
+#aa-latest-news .aa-latest-news-area .desc-section{
+  width:50%;
+  height: 300px; 
 }
 
 
