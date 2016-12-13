@@ -2718,6 +2718,7 @@ LATEST NEWS SECTION
   box-shadow: none;
 }
 #aa-product-details .aa-product-details-area .aa-product-related-item {
+  direction: ltr !important;
   display: inline;
   float: left;
   width: 100%;
