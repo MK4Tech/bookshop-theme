@@ -46,9 +46,9 @@ translate:
         Footer.Addres.text: ''
         Footer.Useful Link: 'Useful Links'
         #General
-        Description: ''
-        Level: ''
-        Subject: ''
+        Description: 'Description'
+        Level: 'Level'
+        Subject: 'Subject'
         Related_Book.Heading: ''
         Related_Series.Heading: ''
 

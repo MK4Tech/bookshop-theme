@@ -11,17 +11,13 @@ orderDirection = "desc"
                       
                         <!-- Home Series Block Heading -->
                         <h2>{{ 'Home.seriesBolock.heading'|_ }}</h2>
-                        
 
                          {% component 'seriesBLock' %} 
-
-
                         
-                        
-                       <div class="aa-browse-btn-container ">
-                             <a class="aa-browse-btn" href="{{ url('/allseries')}}">{'Home.Browse_all_Series'|_} <span class="fa fa-long-arrow-right"></span>
+                        <div class="aa-browse-btn-container ">
+                             <a class="aa-browse-btn" href="{{ url('/allseries')}}">{{'Home.Browse_all_Series'|_}} <span class="fa fa-long-arrow-right"></span>
                              </a>
-                            </div>
+                        </div>
                    </div>
                  
                  </div>

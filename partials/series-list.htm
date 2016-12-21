@@ -65,7 +65,7 @@
         <!-- single sidebar -->
 
         <div class="aa-sidebar-widget">
-          <h3>Level</h3>
+          <h3>{{'Level'|_}}</h3>
           <ul class="aa-catg-nav">
             {% for level in seriesList.levels %}
             <li ><a href="?level={{ level }}">{{ level }}</a></li>
@@ -75,7 +75,7 @@
 
 
         <div class="aa-sidebar-widget">
-          <h3>Category</h3>
+          <h3>{{'Category'|_}}</h3>
           <ul class="aa-catg-nav">
             {% for category in seriesList.categories %}
             <li><a href="?category={{ category }}">{{ category }}</a></li>

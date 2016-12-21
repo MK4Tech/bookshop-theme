@@ -73,7 +73,7 @@ function onStart()
                   <div class="aa-product-view-content">
                     <h3>{{ book.title }}</h3>
                    
-                    <p>{{ book.shortDescription }}</p>
+                    <p>{{ book.shortDescription|raw }}</p>
                     <!-- <h4><strong>Author : </strong>{{ book.author.name }}</h4> -->
                     <!-- <h4><strong>publisher : </strong>{{ book.publisher.name }}</h4> -->
                     <table>
@@ -119,7 +119,7 @@ function onStart()
               
             <!-- Related product -->
             <div class="aa-product-related-item">
-              <h3>Related Books</h3>
+              <h3>{{'Related_Book.Heading'|_}}</h3>
               
               
               <ul class="aa-product-catg aa-related-item-slider">
@@ -136,9 +136,7 @@ function onStart()
                         {% else %}
                         <img src="{{ 'assets/img/electronics/electronic-1.png'|theme }}" >
                         {% endif %}
-                   
                       </a>
-                      
                             <h4 class="aa-product-title">
                                   <a href="{{ url('/book') ~ '/' ~ item.slug }}">{{item.title}}</a>
                             </h4>
