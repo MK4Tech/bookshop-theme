@@ -8,23 +8,17 @@ is_hidden = 0
 [newsList]
 max = 3
 
-[form]
-
-[slideShow]
-slider = 1
+[form newsForm]
 ==
-{% component 'slideShow'%}
-
 <div class="container">
+    {% partial "seriesBLock" %}
+    {% partial "banner1" %}
+    {% partial "latest-books" %}
+    {% partial "home-news" %}
+</div>
 
-{% partial 'seriesBLock' %}
-{% partial "banner1" %}
-<hr>
-{% partial "latest-books" %}
-
-{% partial "home-news" %}
 {% partial "banner2" %}
 
-{% partial "subscribe" %}
-
+<div class="container">
+    {% partial "subscribe" %}
 </div>

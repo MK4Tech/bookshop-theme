@@ -1,101 +1,80 @@
-
 name: bookshop-theme
 description: 'theme for book shop'
 author: Khalil
-
-
-
-
-
-translate:    
-
+homepage: ''
+code: ''
+translate:
     en:
         Locale.Selection: 'select language'
-        # Main Nav 
-        Main-Nav.Home: 'Home'
+        Main-Nav.Home: Home
         Main-Nav.Book-Series: 'Book Series'
         Main-Nav.All-Series: 'Book Series'
         Main-Nav.All-Books: 'All Books'
-        Main-Nav.News: 'News'
+        Main-Nav.News: News
         Main-Nav.About-us: 'About Us'
         Main-Nav.Contact-us: 'Contact Us'
-        # Home Blocks Headings
         Home.seriesBolock.heading: 'Book Series'
         Home.Browse_all_Series: 'Browse all Series'
         Home.LatestBooks.heading: 'Latest Books'
         Home.news.Heading: 'Our News'
-        Home.subscribe-Form: 'Subscribe'  
-        # Contact Us Page
+        Home.subscribe-Form: Subscribe
         ContactUs.Heading: 'Conatct Us'
-        ContactUs.NameLable: 'Name'
-        ContactUs.EmailLable: 'Email'
-        ContactUs.PhoneLable: 'Phone'
-        ContactUs.SubjectLable: 'Subject'
-        ContactUs.MessageLable: 'Message'
-        ContactUs.ButtonLable: 'Send'
+        ContactUs.NameLable: Name
+        ContactUs.EmailLable: Email
+        ContactUs.PhoneLable: Phone
+        ContactUs.SubjectLable: Subject
+        ContactUs.MessageLable: Message
+        ContactUs.ButtonLable: Send
         ContactUs.Word: 'Give us a call, send us an email or a letter.'
-        # Footer
-        Footer.Main Menu : 'Main Menu'
-        Footer.Home : 'Home'
-        Footer.Books: 'Books'
-        Footer.News: 'News'
+        'Footer.Main Menu': 'Main Menu'
+        Footer.Home: Home
+        Footer.Books: Books
+        Footer.News: News
         Footer.About-Us: 'About us'
         Footer.Contact-Us: 'Contact US'
         Footer.Contact-Us.Heading: 'Conatct Us'
         Footer.Address: 'Address: '
         Footer.Addres.text: ''
-        Footer.Useful Link: 'Useful Links'
-        #General
-        Description: 'Description'
-        Level: 'Level'
-        Subject: 'Subject'
+        'Footer.Useful Link': 'Useful Links'
+        Description: Description
+        Level: Level
+        Subject: Subject
         Related_Book.Heading: ''
         Related_Series.Heading: ''
-
-
-        
-        
     ar:
         Locale.Selection: 'select language'
-        # Main Nav 
-        Main-Nav.Home: 'الرئيسية'                
-        Main-Nav.Book-Series: 'السلاسل'
+        Main-Nav.Home: الرئيسية
+        Main-Nav.Book-Series: السلاسل
         Main-Nav.All-Series: 'سلاسل الكتب'
-        Main-Nav.All-Books: 'الكتب'
-        Main-Nav.News: 'أخبارنا'
+        Main-Nav.All-Books: الكتب
+        Main-Nav.News: أخبارنا
         Main-Nav.About-us: 'عن المكتبة'
         Main-Nav.Contact-us: 'اتصل بنا'
-        # Home Blocks Headings
         Home.seriesBolock.heading: 'سلاسل الكتب'
         Home.Browse_all_Series: 'تصفح كل السلالسل'
         Home.LatestBooks.heading: 'أخر اصدارتنا'
-        Home.news.Heading: 'أخبارنا'
+        Home.news.Heading: أخبارنا
         Home.subscribe-Form: 'اشترك ليصلك اصداراتنا'
-        # Contact Us Page
         ContactUs.Heading: 'أتصل بنا'
-        ContactUs.NameLable: 'الأسم'
+        ContactUs.NameLable: الأسم
         ContactUs.EmailLable: 'البرسد الالكتروني'
-        ContactUs.PhoneLable: 'الهاتف'
-        ContactUs.SubjectLable: 'الموضوع'
-        ContactUs.MessageLable: 'الرسالة'
-        ContactUs.ButtonLable: 'أرسل'
-        ContactUs.Word: 'sdas'
-         # Footer
-        Footer.Main Menu : 'القائمة الرئيسية'
-        Footer.Home : 'الرئيسية'
+        ContactUs.PhoneLable: الهاتف
+        ContactUs.SubjectLable: الموضوع
+        ContactUs.MessageLable: الرسالة
+        ContactUs.ButtonLable: أرسل
+        ContactUs.Word: sdas
+        'Footer.Main Menu': 'القائمة الرئيسية'
+        Footer.Home: الرئيسية
         Footer.Books: 'سلاسل الكتب'
-        Footer.News: 'أخبارنا'
+        Footer.News: أخبارنا
         Footer.About-Us: 'عن المكتبة '
         Footer.Contact-Us: 'اتصل بنا'
         Footer.Contact-Us.Heading: 'اتصل بنا'
-        Footer.Address: 'العنوان'
-        Footer.Addres.text: 'العنوان'
-        Footer.Useful Link: 'روابط آخرى'
-        #General
-        Description: 'Description'
-        Level: 'Level'
-        Subject: 'Subjects'
+        Footer.Address: العنوان
+        Footer.Addres.text: العنوان
+        'Footer.Useful Link': 'روابط آخرى'
+        Description: Description
+        Level: Level
+        Subject: Subjects
         Related_Book.Heading: ''
         Related_Series.Heading: ''
-
-        

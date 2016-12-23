@@ -2458,8 +2458,8 @@ LATEST NEWS SECTION
 
 }
 #aa-product-category .aa-product-catg-content .aa-product-catg-body .aa-product-catg li {
-  margin: 15px 10px;
-  padding: 15px 10px;
+  margin: 10px 10px;
+  padding: 6px 10px;
   height: 360px;
   width: 30.916%;
 }
@@ -2472,10 +2472,10 @@ LATEST NEWS SECTION
   height: 330px;
 }
 #aa-product-category .aa-product-catg-content .aa-product-catg-body .list li figure .aa-product-img {
-  float: left;  
+ float: left;  
   margin: 0 auto;
-  width:80%;
-  /*margin-right: 40px;*/
+  width:30%;
+  margin-right: 18px;
 }
 #aa-product-category .aa-product-catg-content .aa-product-catg-body .list li figure .aa-add-card-btn {
   bottom: 35%;
